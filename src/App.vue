@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TypeEffect />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TypeEffect from './components/TypeEffect.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    TypeEffect
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url('https://fonts.googleapis.com/css?family=Righteous');
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #app {
+    font-family: 'Righteous', arial;
+    font-weight: normal;
+    font-size: 4rem;
+    color: #fff;
+    background-color: #241E17;
+    width: 100%;
+    min-height: 100vh;
+  }
 </style>
